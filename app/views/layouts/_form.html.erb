@@ -3,19 +3,19 @@
 <%= form_for @product do |f| %>
 <div class="form-group">
   <%= f.label :name %>
-  <%= f.textfield :name %>
+  <%= f.text_field :name %>
 </div>
 <div class="form-group">
   <%= f.label :description %>
-  <%= f.textfield :description %>
+  <%= f.text_field :description %>
 </div>
 <div class="form-group">
   <%= f.label :found_in %>
-  <%= f.textfield :found_in %>
+  <%= f.text_field :found_in %>
 </div>
 <div class="form-group">
   <%= f.label :going_price %>
-  <%= f.numberfield :going_price %>
+  <%= f.number_field :going_price %>
 </div>
 <%= f.submit %>
 <% end %>
