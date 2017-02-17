@@ -14,7 +14,7 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-02-17T08:40:11-08:00">2017-02-17T08:40:11-08:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-02-17T08:42:35-08:00">2017-02-17T08:42:35-08:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.1
+         1.12
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>26</b> files in total.
-    <b>120</b> relevant lines. 
-    <span class="green"><b>120</b> lines covered</span> and
+    <b>27</b> files in total.
+    <b>126</b> relevant lines. 
+    <span class="green"><b>126</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -73,9 +73,9 @@
       <tr>
         <td class="strong"><a href="#7da0f5943972aa6f2d111dce345db2cb40537fc0" class="src_link" title="app/models/comment.rb">app/models/comment.rb</a></td>
         <td class="green strong">100.0 %</td>
+        <td>5</td>
         <td>4</td>
-        <td>3</td>
-        <td>3</td>
+        <td>4</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -271,6 +271,16 @@
       </tr>
       
       <tr>
+        <td class="strong"><a href="#43b4db88e6a1405730a2181924e7062667f2299f" class="src_link" title="spec/models/comment_spec.rb">spec/models/comment_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>8</td>
+        <td>5</td>
+        <td>5</td>
+        <td>0</td>
+        <td>1.6</td>
+      </tr>
+      
+      <tr>
         <td class="strong"><a href="#6a6904f2232b2c216595898492ed1fd91854211b" class="src_link" title="spec/models/product_spec.rb">spec/models/product_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>10</td>
@@ -397,8 +407,8 @@
     <h3>app/models/comment.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>3</b> relevant lines. 
-      <span class="green"><b>3</b> lines covered</span> and
+      <b>4</b> relevant lines. 
+      <span class="green"><b>4</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -424,7 +434,13 @@
           <code class="ruby">  belongs_to :product</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="4">
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  validates :comment, :presence =&gt; true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
           
           
           <code class="ruby">end</code>
@@ -3629,6 +3645,72 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="43b4db88e6a1405730a2181924e7062667f2299f">
+  <div class="header">
+    <h3>spec/models/comment_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>5</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe Comment do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="4">
+          <span class="hits">2</span>
+          
+          <code class="ruby">it { should validate_presence_of :comment}</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="5">
+          <span class="hits">2</span>
+          
+          <code class="ruby">it { should belong_to :user }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="6">
+          <span class="hits">2</span>
+          
+          <code class="ruby">it { should belong_to :product }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
           
           
           <code class="ruby">end</code>
