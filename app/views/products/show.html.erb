@@ -11,8 +11,9 @@
   <br>
   <h6>**Warning any attempts to haggle on the prices will be settle by musket fire**</h6>
   <% if @user != nil && @user.is_admin %>
-  <%= link_to "edit", edit_user_product_path(@user, @product), :class => "btn btn-default" %> 
-  <%= link_to "delete", user_product_path(@user, @product),:class => "btn btn-default", :data => {:confirm => "Are you sure?",
+  <%= link_to "Edit", edit_user_product_path(@user, @product), :class => "btn btn-default" %>
+  <%= link_to "Add Picture", new_product_image_path(@product), :class => "btn btn-default" %> 
+  <%= link_to "Delete", user_product_path(@user, @product),:class => "btn btn-default", :data => {:confirm => "Are you sure?",
                                               :method => "delete"}  %>
   <% end %>
 </div>
