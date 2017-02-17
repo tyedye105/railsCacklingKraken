@@ -11,8 +11,8 @@
   <br>
   <h6>**Warning any attempts to haggle on the prices will be settle by musket fire**</h6>
   <% if @user != nil && @user.is_admin %>
-  <%= link_to "edit", edit_user_product_path(@user, @product) %> |
-  <%= link_to "delete", user_product_path(@user, @product), :data => {:confirm => "Are you sure?",
+  <%= link_to "edit", edit_user_product_path(@user, @product), :class => "btn btn-default" %> 
+  <%= link_to "delete", user_product_path(@user, @product),:class => "btn btn-default", :data => {:confirm => "Are you sure?",
                                               :method => "delete"}  %>
   <% end %>
 </div>
@@ -26,7 +26,8 @@
   <h3> <%=user_comment.comment %></h3>
   <p> written by: <%= User.find(user_comment.user_id).user_name %> </p>
   <% if @user != nil && @user.is_admin %>
-  <%= link_to "delete this comment"  %>
+  <%= link_to "delete this comment", product_comment_path(@product,user_comment), :class => "btn btn-default",:data => {:confirm => "Are you sure?",
+                                              :method => "delete"}  %>
   <% end %>
   </div>
   <% end %>
@@ -36,7 +37,7 @@
 </div>
 <% end %>
 <% if user_signed_in? %>
-<%= link_to "Say Something about it!", new_product_comment_path(@product, @comment)%>
+<%= link_to "Say Something about it!", new_product_comment_path(@product, @comment), :class => "btn btn-default"%>
 <% else %>
 <div class="well">
   <h3>You gotta <%= link_to "Log In", new_user_session_path %> to add any thing about <%= @product.name %></h3>

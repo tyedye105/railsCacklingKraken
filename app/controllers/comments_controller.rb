@@ -15,11 +15,14 @@ class CommentsController < ApplicationController
       render :new
     end
   end
-  def edit
-  end
-  def update
-  end
+
   def destroy
+      @product = Product.find(params[:product_id])
+      @comment = @product.comments.find(params[:id  ])
+      if @comment.destroy
+        flash[:notice] = "You have removed a comment about the product!"
+        redirect_to product_path(@product)
+    end
   end
 
   private

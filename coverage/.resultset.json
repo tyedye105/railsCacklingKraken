@@ -621,11 +621,14 @@
         0,
         null,
         null,
-        1,
         null,
         1,
+        0,
+        0,
+        0,
+        0,
+        0,
         null,
-        1,
         null,
         null,
         1,
@@ -712,7 +715,15 @@
         1,
         null
       ],
+      "/Users/Guest/Desktop/railsCacklingKraken/app/models/image.rb": [
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
       "/Users/Guest/Desktop/railsCacklingKraken/app/models/product.rb": [
+        1,
         1,
         1,
         1,
@@ -745,10 +756,20 @@
         1,
         null
       ],
+      "/Users/Guest/Desktop/railsCacklingKraken/spec/models/image_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        null
+      ],
       "/Users/Guest/Desktop/railsCacklingKraken/spec/models/product_spec.rb": [
         1,
         null,
         1,
+        2,
         2,
         2,
         2,
@@ -772,6 +793,6 @@
         null
       ]
     },
-    "timestamp": 1487355154
+    "timestamp": 1487359183
   }
 }
