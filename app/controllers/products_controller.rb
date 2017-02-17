@@ -7,6 +7,7 @@ class ProductsController < ApplicationController
     @user = current_user
     @product = Product.find(params[:id])
     @comments = @product.comments.all
+    @image = @product.image.last
   end
   def new
     @user = current_user
@@ -14,6 +15,7 @@ class ProductsController < ApplicationController
   end
   def create
     @user = current_user
+    binding.pry
     @product = @user.products.new(product_params)
       if @user.save
         flash[:notice] = "You have added new merchandise to be sold!"
