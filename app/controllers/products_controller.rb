@@ -4,6 +4,8 @@ class ProductsController < ApplicationController
     @products = Product.all
   end
   def show
+    @user = current_user
+    @product = Product.find(params[:id])
   end
   def new
     @user = current_user

@@ -6,6 +6,11 @@
       <%= product.name %> |
       <%= product.found_in %>
       <p>$<%= product.going_price %>.00</p>
+        <% if @user != nil%>
+        <%= link_to "click here for more details about this item", user_product_path(@user, product) %>
+        <% else %>
+        <%= link_to "click here for more details about this item", product_path(product) %>
+        <% end %>
     </div>
     <% if @user != nil && @user.is_admin %>
     <%= link_to "edit", edit_user_product_path(@user, product) %>
