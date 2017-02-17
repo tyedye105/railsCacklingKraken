@@ -1,0 +1,14 @@
+<div class="well">
+  <h1>Here is all of our glorious junk!</h1>
+  <% if @products.any? %>
+    <% @products.each do |product| %>
+    <div class="well">
+      <%= product.name %> |  
+      <%= product.found_in %>
+      <p>$<%= product.going_price %>.00</p>
+    </div>
+      <% end %>
+    <% else %>
+    <h3>We have currently run out of inventory!</h3>
+  <% end %>
+</div>
