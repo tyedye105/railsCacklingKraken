@@ -1,0 +1,22 @@
+<%= render "layouts/errors", :object => @product %>
+<div class="well">
+<%= form_for @product do |f| %>
+<div class="form-group">
+  <%= f.label %>
+  <%= f.textfield %>
+</div>
+<div class="form-group">
+  <%= f.label %>
+  <%= f.textfield %>
+</div>
+<div class="form-group">
+  <%= f.label %>
+  <%= f.textfield %>
+</div>
+<div class="form-group">
+  <%= f.label %>
+  <%= f.textfield %>
+</div>
+<%= f.submit %>
+<% end %>
+</div>
