@@ -6,6 +6,7 @@ class ProductsController < ApplicationController
   def show
     @user = current_user
     @product = Product.find(params[:id])
+    @comments = @product.comments.all
   end
   def new
     @user = current_user

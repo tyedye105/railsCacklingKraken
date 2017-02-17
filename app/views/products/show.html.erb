@@ -21,8 +21,13 @@
 </div>
 
 <% if @product.comments.any? %>
+  <%= @product.comments.each do |user_comment| %>
 <div class="well">
-  <h3>Word on the street for this product</h3>
+  <h3> user_comment.comment</h3>
+  <% if @user != nil && @user.is_admin %>
+  <%= link_to "delete this comment"  %>
+  <% end %>
+  <% end %>
 </div>
 <% else %>
 <div class="well">
@@ -30,7 +35,7 @@
 </div>
 <% end %>
 <% if user_signed_in? %>
-<%= link_to "Say Something about it!" %>
+<%= link_to "Say Something about it!", new_product_comment_path(@product, @comment)%>
 <% else %>
 <div class="well">
   <h3>You gotta <%= link_to "Log In", new_user_session_path %> to add any thing about <%= @product.name %></h3>

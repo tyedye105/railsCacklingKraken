@@ -1,0 +1,9 @@
+<div class="well">
+<h1>What would you like to say about <%= @product.name %></h1>
+</div>
+<%= form_for [@image, @comment] do |f| %>
+  <%= f.hidden_field :user_id, :value => @user.id %>
+  <%= f.label :comment, "Say it here:" %>
+  <%= f.text_area :comment %>
+  <%= f.submit %>
+  <% end %>

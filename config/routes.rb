@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     resources :products
   end
   resources :products do
-    resources :tags
+    resources :comments
   end
+  resources :comments
 end
