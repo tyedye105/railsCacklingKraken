@@ -1,22 +1,20 @@
 <div class="well">
   <h1>Here is all of our glorious junk!</h1>
+</div>
   <% if @products.any? %>
     <% @products.each do |product| %>
     <div class="well">
-      <%= product.name %> |
-      <%= product.found_in %>
-      <p>$<%= product.going_price %>.00</p>
+    <h2><%= product.name %></h2>
+
+    <h3> Region of Discovery: <%= product.found_in %></h3>
+
+      <h3>Going Price: $<%= product.going_price %>.00</h3>
         <% if @user != nil%>
         <%= link_to "click here for more details about this item", user_product_path(@user, product) %>
         <% else %>
         <%= link_to "click here for more details about this item", product_path(product) %>
         <% end %>
     </div>
-    <% if @user != nil && @user.is_admin %>
-    <%= link_to "edit", edit_user_product_path(@user, product) %>
-    <%= link_to "delete", user_product_path(@user, product), :method => "delete"  %>
-    <% end %>
-
       <% end %>
     <% else %>
     <h3>We have currently run out of inventory!</h3>

@@ -10,23 +10,29 @@
   <p>$<%= @product.going_price %>.00</p>
   <br>
   <h6>**Warning any attempts to haggle on the prices will be settle by musket fire**</h6>
+  <% if @user != nil && @user.is_admin %>
+  <%= link_to "edit", edit_user_product_path(@user, @product) %> |
+  <%= link_to "delete", user_product_path(@user, @product), :data => {:confirm => "Are you sure?",
+                                              :method => "delete"}  %>
+  <% end %>
 </div>
 <div class="well">
   <h2>Word on the street for this product</h2>
 </div>
+
 <% if @product.comments.any? %>
 <div class="well">
-  <h2>Word on the street for this product</h2>
+  <h3>Word on the street for this product</h3>
 </div>
 <% else %>
 <div class="well">
-  <h2>No one has said anything about this thing yet....</h2>
+  <h3>No one has said anything about this thing yet....</h3>
 </div>
 <% end %>
 <% if user_signed_in? %>
 <%= link_to "Say Something about it!" %>
 <% else %>
 <div class="well">
-  <h2>You gotta <%= link_to "Log In", new_user_session_path %> to add any thing about <%= @product.name %></h2>
+  <h3>You gotta <%= link_to "Log In", new_user_session_path %> to add any thing about <%= @product.name %></h3>
 </div>
 <% end %>
