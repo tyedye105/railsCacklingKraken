@@ -7,6 +7,11 @@
       <%= product.found_in %>
       <p>$<%= product.going_price %>.00</p>
     </div>
+    <% if @user != nil && @user.is_admin %>
+    <%= link_to "edit", edit_user_product_path(@user, product) %>
+    <%= link_to "delete", user_product_path(@user, product), :method => "delete"  %>
+    <% end %>
+
       <% end %>
     <% else %>
     <h3>We have currently run out of inventory!</h3>

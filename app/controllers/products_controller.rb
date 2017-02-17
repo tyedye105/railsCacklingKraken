@@ -18,12 +18,28 @@ class ProductsController < ApplicationController
       else
         render :new
       end
-  end
+    end
   def edit
+    @user = current_user
+    @product = Product.find(params[:id])
   end
   def update
-  end
+    @user = current_user
+    @product = Product.find(params[:id])
+      if @product.update(product_params)
+        flash[:notice] = "You have updated the information for this product."
+        redirect_to products_path
+      else
+        render :edit
+      end
+    end
   def destroy
+    @user = current_user
+    @product = Product.find(params[:id])
+    if @product.destroy
+      flash[:notice] = "You have removed this item from our inventory."
+      redirect_to products_path
+    end
   end
 
 private
