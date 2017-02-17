@@ -6,15 +6,17 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <div id="use_nav" class="nav navbar-nav">
+    <div id="use_nav" class="nav navbar-nav navbar-left">
         <% if user_signed_in? %>
-        Logged in as <strong><%= current_user.email %></strong>
+        Logged in as <strong><%= current_user.user_name %></strong>
         <%= link_to "Edit Profile", edit_user_registration_path %>|
-        <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+        <%= link_to "Log out", destroy_user_session_path, method: :delete %>
         <% else %>
         <%= link_to "Sign up", new_user_registration_path %> |
-        <%= link_to "Longin", new_user_session_path %>
+        <%= link_to "Log in", new_user_session_path %> |
         <% end %>
+        <%= link_to "Inventory" %>
+
       </div>
   </head>
 
