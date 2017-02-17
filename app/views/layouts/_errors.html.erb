@@ -1,0 +1,10 @@
+<% if object.errors.any? %>
+<div class="well">
+  <h3>Oops there were some errors. Please try again:</h3>
+  <ul>
+    <% object.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
