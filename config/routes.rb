@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   root to: 'home#index'
   resources :user do
     resources :products
-
   end
-  resources :products
+  resources :products do
+    resources :tags
+  end
 end

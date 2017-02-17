@@ -568,8 +568,9 @@
         1,
         1,
         null,
-        null,
         1,
+        1,
+        null,
         null
       ],
       "/Users/Guest/Desktop/railsCacklingKraken/app/models/user.rb": [
@@ -643,6 +644,6 @@
         null
       ]
     },
-    "timestamp": 1487349755
+    "timestamp": 1487349969
   }
 }

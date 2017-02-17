@@ -1,10 +1,25 @@
-<h1>WHAT?</h1>
+<h1 class="jumbotron">The Finer Details About <%= @product.name %> </h1>
 
 <div class="well">
-  <%= @product.name %>
-  <br>
+  <h1><%= @product.name %></h1>
+  <h3>Description:</h3>
   <%= @product.description %>
-  <br>
+  <h3>Previous location:</h3>
   <%= @product.found_in %>
+  <h3>Going Price in usd( or equivalent.)</h3>
   <p>$<%= @product.going_price %>.00</p>
+  <br>
+  <h6>**Warning any attempts to haggle on the prices will be settle by musket fire**</h6>
 </div>
+<div class="well">
+  <h2>Word on the street for this product</h2>
+</div>
+<% if @product.comments.any? %>
+<div class="well">
+  <h2>Word on the street for this product</h2>
+</div>
+<% else %>
+<div class="well">
+  <h2>No one has said anything about this thing yet....</h2>
+</div>
+<% end %>
