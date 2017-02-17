@@ -3,7 +3,10 @@
 </div>
 <%= form_for [@image, @comment] do |f| %>
   <%= f.hidden_field :user_id, :value => @user.id %>
-  <%= f.label :comment, "Say it here:" %>
+  <div class="form-group">
+  <%= f.label :comment, "Say it here:" %><br>
   <%= f.text_area :comment %>
+  </div>
   <%= f.submit %>
   <% end %>
+</div>
