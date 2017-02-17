@@ -3,12 +3,15 @@
   <% if @products.any? %>
     <% @products.each do |product| %>
     <div class="well">
-      <%= product.name %> |  
+      <%= product.name %> |
       <%= product.found_in %>
       <p>$<%= product.going_price %>.00</p>
     </div>
       <% end %>
     <% else %>
     <h3>We have currently run out of inventory!</h3>
+  <% end %>
+  <% if @user != nil && @user.is_admin %>
+  <%= link_to "Add A Product", new_user_product_path(@user) %>
   <% end %>
 </div>

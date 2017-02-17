@@ -2,20 +2,20 @@
 <div class="well">
 <%= form_for @product do |f| %>
 <div class="form-group">
-  <%= f.label %>
-  <%= f.textfield %>
+  <%= f.label :name %>
+  <%= f.textfield :name %>
 </div>
 <div class="form-group">
-  <%= f.label %>
-  <%= f.textfield %>
+  <%= f.label :description %>
+  <%= f.textfield :description %>
 </div>
 <div class="form-group">
-  <%= f.label %>
-  <%= f.textfield %>
+  <%= f.label :found_in %>
+  <%= f.textfield :found_in %>
 </div>
 <div class="form-group">
-  <%= f.label %>
-  <%= f.textfield %>
+  <%= f.label :going_price %>
+  <%= f.numberfield :going_price %>
 </div>
 <%= f.submit %>
 <% end %>
