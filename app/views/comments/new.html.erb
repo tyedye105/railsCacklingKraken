@@ -1,7 +1,7 @@
 <div class="well">
 <h1>What would you like to say about <%= @product.name %></h1>
 </div>
-<%= form_for [@image, @comment] do |f| %>
+<%= form_for [@product, @comment] do |f| %>
   <%= f.hidden_field :user_id, :value => @user.id %>
   <div class="form-group">
   <%= f.label :comment, "Say it here:" %><br>

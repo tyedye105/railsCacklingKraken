@@ -21,14 +21,15 @@
 </div>
 
 <% if @product.comments.any? %>
-  <%= @product.comments.each do |user_comment| %>
+  <% @product.comments.each do |user_comment| %>
 <div class="well">
-  <h3> user_comment.comment</h3>
+  <h3> <%=user_comment.comment %></h3>
+  <p> written by: <%= User.find(user_comment.user_id).user_name %> </p>
   <% if @user != nil && @user.is_admin %>
   <%= link_to "delete this comment"  %>
   <% end %>
+  </div>
   <% end %>
-</div>
 <% else %>
 <div class="well">
   <h3>No one has said anything about this thing yet....</h3>
