@@ -6,7 +6,10 @@
         null,
         1,
         2,
-        null,
+        2,
+        2,
+        2,
+        2,
         null
       ],
       "/Users/Guest/Desktop/railsCacklingKraken/spec/rails_helper.rb": [
@@ -577,6 +580,9 @@
         1,
         null,
         1,
+        1,
+        1,
+        1,
         null
       ],
       "/Users/Guest/Desktop/railsCacklingKraken/app/models/application_record.rb": [
@@ -596,17 +602,26 @@
       "/Users/Guest/Desktop/railsCacklingKraken/app/models/product.rb": [
         1,
         1,
+        1,
+        1,
+        1,
+        1,
         null
       ],
       "/Users/Guest/Desktop/railsCacklingKraken/spec/models/user_spec.rb": [
         1,
         null,
         1,
+        2,
+        2,
+        2,
+        2,
+        null,
         null,
         null,
         null
       ]
     },
-    "timestamp": 1487348252
+    "timestamp": 1487348675
   }
 }
