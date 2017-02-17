@@ -543,24 +543,6 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/railsCacklingKraken/spec/factories.rb": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
       "/Users/Guest/Desktop/railsCacklingKraken/config/routes.rb": [
         1,
         1,
@@ -571,6 +553,7 @@
         1,
         1,
         null,
+        1,
         null
       ],
       "/Users/Guest/Desktop/railsCacklingKraken/app/models/user.rb": [
@@ -591,11 +574,133 @@
         1,
         null
       ],
+      "/Users/Guest/Desktop/railsCacklingKraken/app/controllers/application_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        0,
+        0,
+        null,
+        null
+      ],
       "/Users/Guest/Desktop/railsCacklingKraken/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/Guest/Desktop/railsCacklingKraken/spec/support/factory_girl.rb": [
+      "/Users/Guest/Desktop/railsCacklingKraken/app/channels/application_cable/channel.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/railsCacklingKraken/app/channels/application_cable/connection.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/railsCacklingKraken/app/controllers/comments_controller.rb": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/railsCacklingKraken/app/controllers/home_controller.rb": [
+        1,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/railsCacklingKraken/app/controllers/products_controller.rb": [
+        1,
+        1,
+        0,
+        0,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        1,
+        0,
+        0,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/railsCacklingKraken/app/jobs/application_job.rb": [
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/railsCacklingKraken/app/mailers/application_mailer.rb": [
+        1,
         1,
         1,
         null
@@ -603,6 +708,39 @@
       "/Users/Guest/Desktop/railsCacklingKraken/app/models/comment.rb": [
         1,
         1,
+        1,
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/railsCacklingKraken/app/models/product.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/railsCacklingKraken/spec/factories.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/railsCacklingKraken/spec/support/factory_girl.rb": [
         1,
         1,
         null
@@ -617,16 +755,6 @@
         2,
         2,
         2,
-        null
-      ],
-      "/Users/Guest/Desktop/railsCacklingKraken/app/models/product.rb": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
         null
       ],
       "/Users/Guest/Desktop/railsCacklingKraken/spec/models/user_spec.rb": [
@@ -644,6 +772,6 @@
         null
       ]
     },
-    "timestamp": 1487349969
+    "timestamp": 1487355154
   }
 }
