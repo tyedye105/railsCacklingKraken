@@ -3,7 +3,7 @@
   <h4> We don't even know what we are selling either.</h4>
 
   <% if user_signed_in? %>
-   <p> Congratulations, welcome <%= @user.user_name %> </p>
+   <h2> Congratulations <%= @user.user_name %>! </h2>
    <% else %>
    <h3>Hey stranger if you are looking to buy or review any of the merchandise you need to sign up with us!</h3>
   <% end %>
