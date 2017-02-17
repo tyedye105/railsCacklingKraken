@@ -1,10 +1,10 @@
 <h1>Add a photo to: <%= @product.name %></h1>
+<%= render "/layouts/errors", :object => @image %>
 <% if @user === nil %>
 <div class="jumbotron">
 <h1>ADMINS ONLY</h1>
 <% else %>
 <% if @user.is_admin %>
-<% render "/layouts/errors", :object => @image %>
 <%= form_for [@product, @image] do |f| %>
 <%= f.file_field :product_image %>
 <div class="form-group">
