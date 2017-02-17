@@ -23,11 +23,10 @@
 
   <body>
     <div class="container">
-
+      <br>
      <h4><%= flash[:alert] %></h4>
+     <br>
      <h4><%= flash[:notice] %></h4>
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
       <%= yield %>
     </div>
   </body>
