@@ -1,24 +1,31 @@
-# README
+# _Cackling Kraken Curios_
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### By *Marty Kovach* 02/17/2017
 
-Things you may want to cover:
 
-* Ruby version
+## Description
+  A online web store for some crazy pirates that wanted a website. They paid in grog....
+  Features: anyone can view the items for sale, however to comment on them, they must register an account with Cackling Kraken. Basic users can add comments on to the details pages for each product.  Those with accounts that are flagged as admins, are able to add new products, pictures, edit anyone of those, and then delete products, and bad comments.
 
-* System dependencies
+## Setup/Installation Requirements
 
-* Configuration
+* Clone this repo: railsCacklingKraken
+* Start Postgres
+* In The terminal: $rails db:create
+* In The terminal: $rails db:migrate
+* In The terminal: $rails s
+* Go to localhost:3000, and check out the app!
+* Once you have created an account, open the rails console and edit your is_admin attributes to true in order access ADMIN POWERS!
 
-* Database creation
+###Known bugs
+  rspec is super slow, also waaaaay tooo many un-used routes
 
-* Database initialization
+## Technologies Used
 
-* How to run the test suite
+_hmtl, css, Ruby, Rails, Paperclip, Devise
 
-* Services (job queues, cache servers, search engines, etc.)
+### License
 
-* Deployment instructions
+*MIT License*
 
-* ...
+Copyright (c) 2017 **_Marty Kovach_**

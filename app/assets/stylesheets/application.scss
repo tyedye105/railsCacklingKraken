@@ -4,12 +4,40 @@
 .jumbotron {
   text-align: center;
 }
+.banner {
+  text-align: center;
+}
 
 h2 {
   text-align: center;
 }
 
+h4 {
+  color: white;
+}
 textarea#comment_comment {
   min-width: 340px;
   min-height: 75px;
+}
+
+body {
+  background-size: cover;
+  background-image: image-url("background.jpg");
+  color: #131313;
+}
+html {
+  height: 100%;
+}
+
+.btn-center {
+  margin-left: 45%;
+  margin-bottom: 10%
+}
+
+#notice {
+  color: white;
+}
+
+.flash {
+  color: white;
 }

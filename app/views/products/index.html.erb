@@ -20,6 +20,6 @@
     <h3>We have currently run out of inventory!</h3>
   <% end %>
   <% if @user != nil && @user.is_admin %>
-  <%= link_to "Add A Product", new_user_product_path(@user) %>
+  <%= link_to "Add A Product", new_user_product_path(@user), :class => "btn btn-default" %>
   <% end %>
 </div>
