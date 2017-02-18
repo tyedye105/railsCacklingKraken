@@ -12,11 +12,9 @@ describe "adding an image" do
     click_button 'Log in'
     click_link "Check Out Our Wares!"
     click_link 'click here for more details about this item'
-    click_link 'Add Picture'
-    page.attach_file('image[product_image]', 'app/assets/images/treasure.jpeg')
-    fill_in 'Title', :with => "Booty"
-    fill_in 'Description', :with => "Its a nice bit of booty."
-    click_button 'Create Image'
-    expect(page).to have_content 'You have added an image to this product!'
+    click_link 'Say Something about it!'
+    fill_in 'Say it here:', :with => "A scathing critique"
+    click_button 'Create Comment'
+    expect(page).to have_content "A scathing critique"
   end
 end

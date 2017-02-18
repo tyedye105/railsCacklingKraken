@@ -18,7 +18,7 @@ describe "add product path" do
     click_button "Create Product"
     click_link 'click here for more details about this item'
     click_link "Delete"
-    expec(page).to have_content "We have currently"
+    expect(page).to have_content "We have currently"
 
   end
 end

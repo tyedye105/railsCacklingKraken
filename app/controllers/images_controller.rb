@@ -11,6 +11,8 @@ class ImagesController < ApplicationController
       if @image.save
         flash[:notice] = "You have added an image to this product!"
         redirect_to product_path(@product)
+      else
+        render :new
       end
   end
 private
