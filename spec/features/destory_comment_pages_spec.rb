@@ -2,10 +2,10 @@ require "rails_helper"
 
 describe "adding an image" do
   it "will let the adminstrator add an image." do
-    user = FactoryGirl.create(:user)
+    user = FactoryBot.create(:user)
     user.is_admin = true
     user.save
-    product = FactoryGirl.create(:product)
+    product = FactoryBot.create(:product)
     visit new_user_session_path()
     fill_in "Email", :with => "Morty@m.com"
     fill_in 'Password', :with => "Morty32"

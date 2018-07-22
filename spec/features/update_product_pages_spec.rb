@@ -2,7 +2,7 @@ require "rails_helper"
 
 describe "add product path" do
   it "will let the user at a product to the inventory" do
-    @user = FactoryGirl.create(:user)
+    @user = FactoryBot.create(:user)
     @user.is_admin = true
     @user.save
     visit new_user_session_path
